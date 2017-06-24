@@ -1,0 +1,58 @@
+
+.wymiar
+{
+	width: 150px;
+	height: 150px;
+}
+
+p
+{
+	margin: 0 auto;
+	margin-top:20px;
+}
+
+#kwadrat1
+{
+	background-color:red;
+	transition-property:all;
+	transition-duration: 2s;
+	transition-timing-function: liner;
+	transition-delay: 0.5s;
+	
+}
+
+#kwadrat2
+{
+	background-color:blue;
+	transition-property:all;
+	transition-duration: 2s;
+	transition-timing-function: liner;
+	transition-delay: 0.5s;
+}
+
+#kwadrat3
+{
+	background-color:green;
+	transition-property:all;
+	transition-duration: 2s;
+	transition-timing-function: liner;
+	transition-delay: 0.5s;
+}
+
+#kwadrat1:hover
+{
+	width: 300px;
+}
+
+#kwadrat2:hover
+{
+	height: 300px;
+}
+
+#kwadrat3:hover
+{
+	width: 300px;
+	height: 300px;
+	transform:rotate(225deg);
+	
+}

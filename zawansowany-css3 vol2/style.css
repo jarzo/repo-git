@@ -1,0 +1,121 @@
+/* p
+{
+	display: inline;
+	color: #fff;
+	font-size: 2em;
+	width: 600px;
+	margin-top: 100px;
+}
+
+p:nth-child(odd)
+{
+	background-color: blue;
+}
+
+p:nth-child(even)
+{
+	background-color: orange;
+}
+
+p:nth-child(1n+3)
+{
+	display: block;
+}*/
+
+a
+{
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+	color: blue;
+	font-size: 1.2em;
+	display: inline-block;
+	margin: 5px;
+	text-align: center;
+	line-height: 200px;
+	
+}
+
+img
+{
+	float: right;
+}
+
+/*
+p:nth-child(3)
+{
+	clear:both;
+}
+*/
+
+#kotek
+{
+	height: 100px;
+	width: 100px;
+	float: none;
+	margin-bottom:300px;
+	display: inline-block;
+	transition-property: all;
+	transition-duration: 5s;
+	transition-timing-function: liner;
+	transition-delay: 0.5s;
+	
+/*	transition: all .8s ease 1s; drugi zapis*/
+	
+}
+
+#kotek:hover
+{
+	height: 200px;
+	width: 200px;
+	
+}
+
+
+/*ustawianie obraska jako tło*/
+#background
+{
+	height: 50vh;
+	background-color: aquamarine;
+	background-image:url(kotek.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;      /*wypełnienie całego pola cover a  contain wymiaruje się do krutszego boku*/
+	background-attachment: fixed; /*scrolowanie tła*/
+	
+/*	w jednej właściwości:   background:url(kotek.jpg) center no-repeat;
+	background-size:cover;zamiast 4 własciwości powyżej*/
+}
+/*zwijanie tekstu w momęcie przepełnienia (układ kolumnowy)*/
+#overflow p
+{
+	width: 25%;
+	float: left;
+	height: 100px;
+}
+
+#overflow p:nth-child(even)
+{
+	background-color: antiquewhite;
+}
+
+#overflow p:nth-child(odd)
+{
+	background-color: cyan;
+}
+
+#overflow p:nth-child(2)
+{
+	overflow: hidden;
+}
+
+#overflow p:nth-child(3)
+{
+	overflow: scroll;
+}
+
+#overflow p:nth-child(4)
+{
+	overflow: auto;
+}
+
